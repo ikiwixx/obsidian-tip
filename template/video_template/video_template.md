@@ -25,7 +25,7 @@ title = json_res.data.title;
 author = json_res.data.owner.name;
 chapters = "";
 for (let idx in json_res.data.pages) {
-  chapters += transform_page_to_chapter_str(json_res.data.pages[idx], video_url) + "\n";
+  chapters += transform_page_to_chapter_str(json_res.data.pages[idx], url) + "\n";
 }
 source = "bilibili";
 }
